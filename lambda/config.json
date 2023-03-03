@@ -1,0 +1,4 @@
+{
+    "URL_UNIDADES" : "http://eta.edifitolabs.com/api/unidades.php",
+    "URL_GASTOS_COMUNES" : "http://eta.edifitolabs.com/api/gastoComun.php"
+}

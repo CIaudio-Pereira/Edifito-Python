@@ -1,0 +1,71 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Edifito"
+        },
+        "es-ES": {
+          "summary": "Edifito",
+          "examplePhrases": [
+            "Alexa, abre aplicacion Edifito",
+            "Muestrame los gastos comunes",
+            "Realiza una reserva"
+          ],
+          "keywords": [
+            "Edifito"
+          ],
+          "name": "Edifito",
+          "description": "Edifito",
+          "smallIconUri": "file://assets/images/es-ES_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-ES_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Para usar esta aplicación debes iniciar sesión en Edifito",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:753581569830:function:c41c62dd-271e-4b20-98d4-e46a9d705d5d:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:753581569830:function:c41c62dd-271e-4b20-98d4-e46a9d705d5d:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:753581569830:function:c41c62dd-271e-4b20-98d4-e46a9d705d5d:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:753581569830:function:c41c62dd-271e-4b20-98d4-e46a9d705d5d:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "es-ES": {
+          "termsOfUseUrl": "https://www.amazon.com/",
+          "privacyPolicyUrl": "https://www.amazon.com/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

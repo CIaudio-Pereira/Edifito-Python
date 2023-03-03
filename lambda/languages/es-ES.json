@@ -1,0 +1,12 @@
+{
+    "WELCOME_MSG" : "Bienvenido al menú de Edifito ¿En que puedo ayudarte?",
+    "NOT_REGISTERED_MSG" : "Para acceder a la aplicacion debes iniciar sesion con tu cuenta de Edifito",
+    "COMMON_EXPENSES": "Tienes una deuda total de $",
+    "SUCCESSFUL_INVITATION": "Invitacion realizada correctamente a ",
+    "SUCCESSFUL_BOOKING": "Reserva realizada correctamente para ",
+    "HELP_MSG":"Puedes preguntar por tus gastos comunes, puedes realizar una reserva de instalacion y puedes realizar invitaciones",
+    "CANCEL_STOP_MSG": "Volviendo al menu de inicio",
+    "ACTION_NOT_FOUND_MSG":"Lo siento, no te eh entendido",
+    "ERROR_WITH_REQUEST_MSG":"Lo siento, tuve problemas para hacer lo que me pediste. Inténtalo de nuevo.",
+    "ERROR_MSG":"Error: "
+}
