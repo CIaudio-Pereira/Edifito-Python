@@ -1,0 +1,13 @@
+{
+    "WELCOME" : "Welcome to the Edifito menu. How can I help you?",
+    "WELCOME_MSG" : "Welcome to the Edifito menu. How can I help you?",
+    "NOT_REGISTERED_MSG" : "To access the application you must log in with your Edifito account",
+    "COMMON_EXPENSES": "You have a total debt of $",
+    "SUCCESSFUL_INVITATION": "Invitation successful to ",
+    "SUCCESSFUL_BOOKING": "Reservation made successfully for ",
+    "HELP_MSG":"You can ask about your common expenses, you can make an installation reservation and you can make invitations",
+    "CANCEL_STOP_MSG": "Returning to the start menu",
+    "ACTION_NOT_FOUND_MSG":"I'm sorry, I didn't understand you",
+    "ERROR_WITH_REQUEST_MSG":"Sorry, I had trouble doing what you asked. Please try again.",
+    "ERROR_MSG":"Error: "
+}

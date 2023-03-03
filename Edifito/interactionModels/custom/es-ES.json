@@ -1,0 +1,416 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "aplicacion edifito",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "necesito ayuda",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GastosComunesIntent",
+          "slots": [],
+          "samples": [
+            "gastos comunes",
+            "cuanto debo de gastos comunes",
+            "muestrame los gastos comunes",
+            "ver gastos comunes"
+          ]
+        },
+        {
+          "name": "RealizarInvitacionIntent",
+          "slots": [
+            {
+              "name": "guestname",
+              "type": "AMAZON.Person",
+              "samples": [
+                "se llama {guestname}",
+                "{guestname}",
+                "su nombre es {guestname}"
+              ]
+            },
+            {
+              "name": "rut",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "es {rut}",
+                "su rut es {rut}  ",
+                "{rut}"
+              ]
+            },
+            {
+              "name": "phonenumber",
+              "type": "AMAZON.PhoneNumber",
+              "samples": [
+                "es {phonenumber}",
+                "{phonenumber}",
+                "su numero es {phonenumber}"
+              ]
+            },
+            {
+              "name": "email",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "es {email}",
+                "su email es {email}",
+                "{email}"
+              ]
+            },
+            {
+              "name": "licenseplate",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "la patente es {licenseplate}",
+                "es {licenseplate}",
+                "su patente es {licenseplate}"
+              ]
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "la {date}",
+                "el {date}",
+                "{date}",
+                "para {date}"
+              ]
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "samples": [
+                "viene a las {time}",
+                "a las {time}",
+                "{time}",
+                "llegara a las {time}"
+              ]
+            },
+            {
+              "name": "comment",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{comment}"
+              ]
+            }
+          ],
+          "samples": [
+            "invita a {guestname}",
+            "invitacion",
+            "realiza una invitacion"
+          ]
+        },
+        {
+          "name": "RealizarReservaIntent",
+          "slots": [
+            {
+              "name": "place",
+              "type": "instalacion",
+              "samples": [
+                "el {place}",
+                "la {place}",
+                "{place}",
+                "quiero reservar la {place}"
+              ]
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "el {date}",
+                "para {date}",
+                "para el {date}"
+              ]
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "samples": [
+                "para las {time}",
+                "{time}",
+                "a las {time}"
+              ]
+            }
+          ],
+          "samples": [
+            "quiero reservar la {place}",
+            "quiero reservar el {place}",
+            "quiero reservar una instalacion",
+            "quiero hacer una reserva",
+            "realiza una reserva"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Bodega"
+              }
+            },
+            {
+              "name": {
+                "value": "Gimnasio"
+              }
+            },
+            {
+              "name": {
+                "value": "Cancha de Tenis"
+              }
+            },
+            {
+              "name": {
+                "value": "Piscina"
+              }
+            },
+            {
+              "name": {
+                "value": "Estacionamiento"
+              }
+            }
+          ],
+          "name": "instalacion"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RealizarInvitacionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "guestname",
+              "type": "AMAZON.Person",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.634147440765"
+              }
+            },
+            {
+              "name": "rut",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.329317652621"
+              }
+            },
+            {
+              "name": "phonenumber",
+              "type": "AMAZON.PhoneNumber",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.757345855173"
+              }
+            },
+            {
+              "name": "email",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.1013216535690"
+              }
+            },
+            {
+              "name": "licenseplate",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.802701245873"
+              }
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.102430926438"
+              }
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.567113725620"
+              }
+            },
+            {
+              "name": "comment",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1366825872190.345132919804"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RealizarReservaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "place",
+              "type": "instalacion",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.648236113120.417105721969"
+              }
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.648236113120.42793041686"
+              }
+            },
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.648236113120.544638737543"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1366825872190.634147440765",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es el nombre del invitado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.329317652621",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es el rut del invitado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.757345855173",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es el numero de telefono del invitado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.1013216535690",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es el email del invitado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.802701245873",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cual es la patente del auto?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.102430926438",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Para que dia quieres realizar la invitacion?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.567113725620",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿A que hora llegara el invitado?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1366825872190.345132919804",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Algun comentario sobre la visita?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.648236113120.417105721969",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Que instalacion quieres reservar?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.648236113120.42793041686",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Para que dia quieres realizar la reserva?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.648236113120.544638737543",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Para que hora quieres realizar la reserva?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "27"
+}
